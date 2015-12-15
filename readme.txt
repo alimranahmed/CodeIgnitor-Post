@@ -17,7 +17,7 @@ Description: This is a simple blog using codeignitor framework of php. The view 
 Technical Description
 ----------------------
 
-Model: I have create tree controller in this project. The prefix m_ is used to identify the file as model easily.
+Model: I have create three models in this project. The prefix m_ is used to identify the file as model easily.
 	1. m_db: The common  operations on database(CRUD)
 	2. m_comment: The operations on database related to comments.
 	3. m_user: The operations on database related to users.
@@ -26,7 +26,7 @@ Model: I have create tree controller in this project. The prefix m_ is used to i
 View: All the views are named as their functionality. the header and footer view contain the header and footer of every pages and necessary links on stylesheets and scripts.
 
 
-Controller: 
+Controllers: 
 	1. Blog: Controll the common behaviours of the blog.
 	2. Comments: Controll the functionality of comments.
 	3. Emails: Controll the functionality of emails. Which is not active in this blog.
