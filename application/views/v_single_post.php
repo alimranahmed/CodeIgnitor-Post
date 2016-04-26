@@ -26,7 +26,7 @@
                 
                 if($this->session->userdata('user_id'))//if user is loged in, display comment box
                 {?>
-                    <form action="<?=  base_url()?>comments/add_comment/<?=$post['post_id']?>" method="post">
+                    <form action="<?=  base_url()?>index.php/comments/add_comment/<?=$post['post_id']?>" method="post">
                         <div class="form_settings">
                             <p>
                                 <span>Comment</span>
@@ -43,7 +43,7 @@
                 }
                 else {//if no user is loged in, then show the loged in button
                 ?>
-                <a href="<?=  base_url()?>users/login">Login to comment</a>
+                <a href="<?=  base_url()?>index.php/users/login">Login to comment</a>
         <?php    }
             }?>   
     </div>

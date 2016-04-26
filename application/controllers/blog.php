@@ -13,7 +13,7 @@ class Blog extends CI_Controller
         
         //pagination
         $this->load->library('pagination');
-        $config['base_url'] = base_url().'blog/index/';//url to set pagination
+        $config['base_url'] = base_url().'index.php/blog/index/';//url to set pagination
         $config['total_rows'] = $this->m_db->get_post_count();
         $config['per_page'] = 5; 
         $this->pagination->initialize($config); 
@@ -49,7 +49,7 @@ class Blog extends CI_Controller
     {
         if(!$this->check_permissions('author'))//when the user is not an andmin and author
         {
-            redirect(base_url().'users/login');
+            redirect(base_url().'index.php/users/login');
         }
         if($this->input->post())
         {
@@ -59,7 +59,7 @@ class Blog extends CI_Controller
                 'active' => 1,
             );
             $this->m_db->insert_post($data);
-            redirect(base_url().'blog/');
+            redirect(base_url().'index.php/blog/');
         }
         else{
             
@@ -78,7 +78,7 @@ class Blog extends CI_Controller
     {
         if(!$this->check_permissions('author'))//when the user is not an andmin and author
         {
-            redirect(base_url().'users/login');
+            redirect(base_url().'index.php/users/login');
         }
         $data['success'] = 0;
         
@@ -108,10 +108,10 @@ class Blog extends CI_Controller
     {
         if(!$this->check_permissions('author'))//when the user is not an andmin and author
         {
-            redirect(base_url().'users/login');
+            redirect(base_url().'index.php/users/login');
         }
         $this->m_db->delete_post($post_id);
-        redirect(base_url().'blog/');
+        redirect(base_url().'index.php/blog/');
     }
     
     function check_permissions($required)//checking current user's permission

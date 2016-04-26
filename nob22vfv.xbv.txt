@@ -1,0 +1,26 @@
+﻿Added index.php in all the pages because it was showing address error
+
+Signed-off-by: Rajendra Lora <rajendra.lora@gmail.com>
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   application/.htaccess
+#	modified:   application/config/config.php
+#	modified:   application/controllers/blog.php
+#	modified:   application/controllers/comments.php
+#	modified:   application/controllers/users.php
+#	modified:   application/views/header.php
+#	modified:   application/views/sidebar.php
+#	modified:   application/views/v_edit_post.php
+#	modified:   application/views/v_home.php
+#	modified:   application/views/v_login.php
+#	modified:   application/views/v_new_post.php
+#	modified:   application/views/v_register.php
+#	modified:   application/views/v_single_post.php
+#	modified:   application/views/v_upload_success.php
+#
+

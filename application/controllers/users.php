@@ -25,7 +25,7 @@ class Users extends CI_Controller
                 $this->session->set_userdata('user_id', $user['user_id']);
                 $this->session->set_userdata('username', $user['username']);
                 $this->session->set_userdata('user_type',$user['user_type']);
-                redirect(base_url().'blog/');
+                redirect(base_url().'index.php/blog/');
             }
         }
         $class_name = array(
@@ -41,7 +41,7 @@ class Users extends CI_Controller
     function logout()
     {
         $this->session->sess_destroy();
-        redirect(base_url().'blog/');
+        redirect(base_url().'index.php/blog/');
     }
     function register()
     {
@@ -93,7 +93,7 @@ class Users extends CI_Controller
                 $this->session->set_userdata('user_id',$user_id);
                 $this->session->set_userdata('username',$this->input->post('username'));
                 $this->session->set_userdata('user_type',$this->input->post('user_type'));
-                redirect(base_url().'blog/');
+                redirect(base_url().'index.php/blog/');
             }
             
         }

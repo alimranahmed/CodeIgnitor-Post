@@ -6,13 +6,13 @@ class Comments extends CI_Controller
     {
         if(!$this->input->post())
         {
-            redirect(base_url().'blog/post'.$postID);
+            redirect(base_url().'index.php/blog/post'.$postID);
         }
         
         $user_type = $this->session->userdata('user_type');
         if(!$user_type)
         {
-            redirect(base_url().'users/login');
+            redirect(base_url().'index.php/users/login');
         }
         
         $this->load->model('m_comment');
@@ -22,6 +22,6 @@ class Comments extends CI_Controller
             'comment' => $this->input->post('comment'),
         );
         $this->m_comment->add_comment($data);
-        redirect(base_url().'blog/post/'.$postID);
+        redirect(base_url().'index.php/blog/post/'.$postID);
     }
 }

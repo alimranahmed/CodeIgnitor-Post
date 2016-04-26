@@ -2,7 +2,7 @@
     <div id="content">
         <!-- insert the page content here -->
         <h1>Login</h1>
-        <form action="<?=  base_url()?>users/login/" method="post">
+        <form action="<?=  base_url()?>index.php/users/login/" method="post">
             <div class="form_settings">
                 <?php
                     if($error)
