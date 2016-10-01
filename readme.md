@@ -22,9 +22,5 @@ All the views are named as their functionality. the header and footer view conta
 2. Comments: Controll the functionality of comments.
 3. Emails: Controll the functionality of emails. Which is not active in this blog.
 4. Pages:Controll the navigation through the pages.
-5: Uploads: Controll uploading and re-sizing photos.
+5. Uploads: Controll uploading and re-sizing photos.
 6. Users: Controll the permission and action of users(user, admin and author).
-
-## About author
-Al- Imran Ahmed
-E-mail: al.imran.cse@gmail.com
