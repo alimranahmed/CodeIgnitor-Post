@@ -10,6 +10,6 @@
             <?php 
             }?>
         </ul>
-        <p><a href="<?=  base_url()?>upload/">Upload another file</a></p>
+        <p><a href="<?=  base_url()?>index.php/upload/">Upload another file</a></p>
     </div>
 </div>

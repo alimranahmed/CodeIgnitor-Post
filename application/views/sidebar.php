@@ -14,7 +14,7 @@
         <h4><?=$posts[0]["post_title"];?></h4>
         <h5><?=date('d-m-Y h:i A',strtotime($posts[0]['date_added']))?></h5>
         <p><?=substr(strip_tags($posts[0]['post']), 0, 200).'...';?></p>
-        <p><a href="<?=  base_url()?>blog/post/<?=$posts[0]['post_id']?>">Read More</a></p>
+        <p><a href="<?=  base_url()?>index.php/blog/post/<?=$posts[0]['post_id']?>">Read More</a></p>
     </div>
 </div>
 

@@ -5,7 +5,7 @@
             <?php if($success == 1) {echo "This post has been updated";}?>
         </div>
         <h1>Edit Post</h1>
-        <form action="<?=  base_url()?>blog/editpost/<?=$post['post_id']?>" method="post">
+        <form action="<?=  base_url()?>index.php/blog/editpost/<?=$post['post_id']?>" method="post">
             <div class="form_settings">
                 <p>
                     <span>Title</span>

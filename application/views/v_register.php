@@ -4,7 +4,7 @@
         <h1>Register as a new user</h1>
         <?php if($error){echo '<div style="color:red;">'.$error.'</div>'; }?>
         
-        <form action="<?=  base_url()?>users/register/" method="post">
+        <form action="<?=  base_url()?>index.php/users/register/" method="post">
             <div class="form_settings">
                 <p><span>Username</span><input class="" type="text" name="username" value="" /></p>
                 <p><span>E-Mail</span><input class="" type="email" name="email" value="" /></p>
