@@ -11,6 +11,16 @@ class M_db extends CI_Model
         $query = $this->db->get();
         return $query->result_array();
     }
+	function search_posts($query)
+	{
+		$this->db->select();
+		$this->db->from('posts');
+		$this->db->like("post_title", $query, 'both');
+		$this->db->or_like("post", $query, 'both');
+		$this->db->order_by('date_added', 'desc');
+		$query = $this->db->get();
+		return $query->result_array();
+	}
     function get_post_count()
     {
         $this->db->select()->from('posts')->where('active',1);

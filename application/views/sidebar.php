@@ -1,5 +1,12 @@
 <div id="sidebar_container">
     <img class="paperclip" src="<?=  base_url()?>public/images/paperclip.png" alt="paperclip" />
+	<div class="sidebar">
+		<h3>Search:</h3>
+		<form method="get" action="<?= base_url() ?>blog/search" id="search">
+			<p style="padding: 0 0 9px 0;"><input class="search" type="text" name="query" placeholder="Type your search"/></p>
+			<p><a class="subscribe" href="javascript:void(0);" onclick="$('#search').submit();" >Find</a></p>
+		</form>
+	</div>
     <div class="sidebar">
         <h3>Newsletter</h3>
         <p>If you would like to receive our newletter, please enter your email address and click 'Subscribe'.</p>
