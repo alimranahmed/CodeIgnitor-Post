@@ -24,3 +24,6 @@ All the views are named as their functionality. the header and footer view conta
 4. Pages:Controll the navigation through the pages.
 5. Uploads: Controll uploading and re-sizing photos.
 6. Users: Controll the permission and action of users(user, admin and author).
+
+### Screenshot
+![List of All Post](https://cloud.githubusercontent.com/assets/7629427/22406304/337a220e-e67b-11e6-981f-d5f14f0352a5.png)
