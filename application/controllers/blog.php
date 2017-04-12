@@ -30,31 +30,31 @@ class Blog extends CI_Controller
         $this->load->view('footer');
     }
 	function search($query ='')//index page
-	    {
+    {
 
-		    $query = $query != '' ? $query :$this->input->get('query', TRUE);
+        $query = $query != '' ? $query :$this->input->get('query', TRUE);
 
-	        $data['posts'] = $this->m_db->search_posts($query);
+        $data['posts'] = $this->m_db->search_posts($query);
 
-	        //pagination
-	        $this->load->library('pagination');
-	        $config['base_url'] = base_url().'blog/search/?query=' . urlencode($query);//url to set pagination
-	        $config['total_rows'] = $this->m_db->get_post_count();
-	        $config['per_page'] = 5;
-	        $this->pagination->initialize($config);
-	        $data['pages'] = $this->pagination->create_links(); //Links of pages
-	        $data['query'] = $query; //Links of pages
+        //pagination
+        $this->load->library('pagination');
+        $config['base_url'] = base_url().'blog/search/?query=' . urlencode($query);//url to set pagination
+        $config['total_rows'] = $this->m_db->get_post_count();
+        $config['per_page'] = 5;
+        $this->pagination->initialize($config);
+        $data['pages'] = $this->pagination->create_links(); //Links of pages
+        $data['query'] = $query; //Links of pages
 
-	        $class_name = array(
-	            'home_class'=>'current',
-	            'login_class' => '',
-	            'register_class' => '',
-	            'upload_class'=>'',
-	            'contact_class'=>'');
-	        $this->load->view('header',$class_name);
-	        $this->load->view('v_search',$data);
-	        $this->load->view('footer');
-	    }
+        $class_name = array(
+            'home_class'=>'current',
+            'login_class' => '',
+            'register_class' => '',
+            'upload_class'=>'',
+            'contact_class'=>'');
+        $this->load->view('header',$class_name);
+        $this->load->view('v_search',$data);
+        $this->load->view('footer');
+    }
     function post($post_id)//single post page
     {   
         $this->load->model('m_comment');
