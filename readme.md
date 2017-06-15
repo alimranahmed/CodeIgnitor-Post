@@ -25,5 +25,13 @@ All the views are named as their functionality. the header and footer view conta
 5. Uploads: Controll uploading and re-sizing photos.
 6. Users: Controll the permission and action of users(user, admin and author).
 
+#### Installation Process
+1. clone the repository by downloading it or by simply running the command 
+`git clone https://github.com/alimranahmed/CodeIgnitor-Post.git`
+2. Now you have the project in your computer as a directory named as CodeIgnitor-Post. You can put that directory directly in your server(Apache2) or you can create virtual host for that directory. 
+3. Open the `application/config/database.php` file and edit database configuration as your preference. 
+4. Now, there is a .sql file in root directory of the project named as `my_blog_db.sql`. Execute that file in your database changing the database name is required. 
+5. How go to your browser and hit the url for that project if virtual host created otherwise try hitting `localhost/CodeIgnitor-Post` in browser's address bar. Now, you should see that home page of this project. 
+
 ### Screenshot
 ![List of All Post](https://cloud.githubusercontent.com/assets/7629427/22406304/337a220e-e67b-11e6-981f-d5f14f0352a5.png)
